@@ -16,7 +16,7 @@ func (cfg *apiConfig) handlerNotesGet(w http.ResponseWriter, r *http.Request, us
 		respondWithError(w, http.StatusInternalServerError, "Couldn't get posts for user")
 		return
 	}
-
+// test
 	postsResp, err := databasePostsToPosts(posts)
 	if err != nil {
 		log.Println(err)
